@@ -32,7 +32,7 @@ defmodule Ecto.UKPostcode do
     if UKPostcode.full?(postcode) do
       {:ok, UKPostcode.normalise postcode}
     else
-      {:error, :invalid_postcode}
+      :error
     end
   end
 end

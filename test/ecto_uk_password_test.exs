@@ -23,11 +23,11 @@ defmodule Ecto.UKPostcodeTest do
   end
 
   test "fail to cast w1a" do
-    assert cast("w1a") == {:error, :invalid_postcode}
+    assert cast("w1a") == :error
   end
 
   test "fail to cast 1111111" do
-    assert cast("1111111") == {:error, :invalid_postcode}
+    assert cast("1111111") == :error
   end
 
   test "load postcode" do
