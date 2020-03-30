@@ -3,7 +3,7 @@ defmodule Ecto.UKPostcode.Mixfile do
 
   def project do
     [app: :ecto_uk_postcode,
-     version: "0.2.0",
+     version: "0.3.0",
      elixir: "~> 1.3",
      build_embedded: Mix.env == :prod,
      start_permanent: Mix.env == :prod,
@@ -51,7 +51,7 @@ defmodule Ecto.UKPostcode.Mixfile do
   # Type "mix help deps" for more examples and options
   defp deps do
     [
-      {:ecto, "~> 2.1.0"},
+      {:ecto, "~> 3.0"},
       {:uk_postcode, "~> 0.3.0"},
       {:ex_doc, "~> 0.14", only: :dev, runtime: false}
     ]
